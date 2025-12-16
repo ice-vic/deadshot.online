@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Deadshot Game</title>
+    <link rel="canonical" href="https://deadshot.buzz/terms-of-service.html">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --neon-blue: #00D9FF;
+            --neon-purple: #7B2FF7;
+            --neon-pink: #FF006E;
+            --neon-cyan: #00FFF0;
+            --neon-green: #39FF14;
+            --dark-bg: #0F0F1E;
+            --dark-secondary: #1A1A2E;
+            --dark-card: rgba(26, 26, 46, 0.8);
+            --text-primary: #FFFFFF;
+            --text-secondary: #B8BCC8;
+            --gradient-primary: linear-gradient(135deg, #00D9FF 0%, #7B2FF7 100%);
+            --gradient-secondary: linear-gradient(135deg, #7B2FF7 0%, #FF006E 100%);
+            --gradient-accent: linear-gradient(135deg, #00FFF0 0%, #00D9FF 100%);
+            --gradient-dark: linear-gradient(180deg, #0F0F1E 0%, #1A1A2E 50%, #0F0F1E 100%);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background: var(--gradient-dark);
+            min-height: 100vh;
+            color: var(--text-primary);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        /* Neon glow effects */
+        .neon-glow {
+            box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+        }
+
+        .neon-text-glow {
+            text-shadow: 0 0 10px rgba(0, 217, 255, 0.8);
+        }
+
+        .neon-border {
+            border: 1px solid rgba(0, 217, 255, 0.3);
+            box-shadow: 0 0 15px rgba(0, 217, 255, 0.2);
+        }
+
+        .glass-nav {
+            background: rgba(15, 15, 30, 0.9);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+            box-shadow: 0 4px 30px rgba(0, 217, 255, 0.1);
+        }
+
+        .gradient-title {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+        }
+
+        .nav-link {
+            color: var(--text-primary);
+            font-weight: 500;
+            font-size: 17px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 8px 0;
+        }
+
+        .nav-link:hover {
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px rgba(0, 217, 255, 0.8);
+        }
+
+        .card {
+            background: var(--dark-card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 28px;
+            border: 1px solid rgba(0, 217, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Ensure all text is visible on dark background */
+        p, span, div, li, td, th, blockquote {
+            color: var(--text-primary);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--text-primary);
+        }
+
+        .text-gray-700 {
+            color: var(--text-secondary) !important;
+        }
+
+        .text-gray-900 {
+            color: var(--text-primary) !important;
+        }
+
+        .text-gray-600 {
+            color: var(--text-secondary) !important;
+        }
+
+        .text-blue-600 {
+            color: var(--neon-blue) !important;
+        }
+
+        .bg-gray-50 {
+            background-color: rgba(26, 26, 46, 0.6) !important;
+            border: 1px solid rgba(0, 217, 255, 0.1) !important;
+        }
+
+        .section-spacing {
+            padding: 80px 0;
+        }
+
+        @media (max-width: 768px) {
+            .section-spacing {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="glass-nav fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+            <div class="logo text-2xl font-bold gradient-title">Deadshot</div>
+
+            <div class="flex items-center gap-8">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home mr-2"></i>Home
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope mr-2"></i>Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+        <section class="container mx-auto px-4 md:px-8 section-spacing">
+            <div class="card p-8 md:p-12 max-w-4xl mx-auto">
+                <h1 class="gradient-title mb-8">Terms of Service</h1>
+
+                <div class="space-y-8 text-gray-700">
+                    <p class="text-lg leading-relaxed">
+                        <strong>Last updated:</strong> December 16, 2025
+                    </p>
+
+                    <p class="leading-relaxed">
+                        Welcome to Deadshot Game! These Terms of Service ("Terms") govern your use of our website deadshot.buzz and our online gaming services. By accessing or using our website, you agree to be bound by these Terms.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Acceptance of Terms</h2>
+                    <p class="leading-relaxed">
+                        By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Description of Service</h2>
+                    <p class="leading-relaxed">
+                        Deadshot Game is a free online multiplayer shooting game that can be played directly in your web browser. Our service includes:
+                    </p>
+                    <ul class="list-disc pl-8 space-y-2">
+                        <li>Access to the Deadshot game</li>
+                        <li>Multiplayer gaming functionality</li>
+                        <li>Leaderboard and scoring system</li>
+                        <li>Game-related content and features</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">3. User Eligibility</h2>
+                    <p class="leading-relaxed">
+                        To use our service, you must:
+                    </p>
+                    <ul class="list-disc pl-8 space-y-2">
+                        <li>Be at least 13 years of age</li>
+                        <li>Have parental consent if under 18 years of age</li>
+                        <li>Comply with all applicable laws and regulations</li>
+                        <li>Provide accurate information when required</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">4. Acceptable Use</h2>
+                    <p class="leading-relaxed">
+                        You agree to use our service only for lawful purposes and in accordance with these Terms. You agree NOT to:
+                    </p>
+                    <ul class="list-disc pl-8 space-y-2">
+                        <li>Use the service for any illegal or unauthorized purpose</li>
+                        <li>Attempt to gain unauthorized access to our systems</li>
+                        <li>Use cheats, hacks, or exploits to gain unfair advantages</li>
+                        <li>Harass, abuse, or harm other players</li>
+                        <li>Share inappropriate or offensive content</li>
+                        <li>Violate any applicable laws or regulations</li>
+                        <li>Disrupt the normal operation of the service</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Intellectual Property Rights</h2>
+                    <p class="leading-relaxed">
+                        The service and its original content, features, and functionality are and will remain the exclusive property of Deadshot Game and its licensors. The service is protected by copyright, trademark, and other laws.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">6. User-Generated Content</h2>
+                    <p class="leading-relaxed">
+                        While using our service, you may be able to create or share content. You retain ownership of any content you create, but you grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, and display such content in connection with the service.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">7. Privacy</h2>
+                    <p class="leading-relaxed">
+                        Your privacy is important to us. Please review our Privacy Policy, which also governs your use of the service, to understand how we collect, use, and protect your information.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Termination</h2>
+                    <p class="leading-relaxed">
+                        We may terminate or suspend your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">9. Disclaimers</h2>
+                    <p class="leading-relaxed">
+                        Your use of the service is at your sole risk. The service is provided on an "AS IS" and "AS AVAILABLE" basis. We make no warranties, expressed or implied, and hereby disclaim all warranties.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">10. Limitation of Liability</h2>
+                    <p class="leading-relaxed">
+                        In no event shall Deadshot Game, our directors, employees, partners, agents, suppliers, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">11. Governing Law</h2>
+                    <p class="leading-relaxed">
+                        These Terms shall be interpreted and governed by the laws of the jurisdiction in which our company operates, without regard to its conflict of law provisions.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">12. Changes to Terms</h2>
+                    <p class="leading-relaxed">
+                        We reserve the right to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days notice prior to any new terms taking effect.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">13. Contact Information</h2>
+                    <p class="leading-relaxed">
+                        If you have any questions about these Terms of Service, please contact us:
+                    </p>
+                    <div class="bg-gray-50 p-6 rounded-lg mt-4">
+                        <p class="mb-2"><strong>Email:</strong> legal@deadshot.buzz</p>
+                        <p class="mb-2"><strong>Website:</strong> <a href="https://deadshot.buzz" class="text-blue-600 hover:underline">https://deadshot.buzz</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass-nav border-t border-neon-border py-8">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <p class="text-secondary">&copy; 2025 Deadshot Game. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Deadshot Game</title>
+    <meta name="description" content="Learn about Deadshot Game, your premier destination for free online multiplayer shooting games. Discover our mission to provide exciting gaming experiences for players worldwide.">
+    <link rel="canonical" href="https://deadshot.buzz/about-us.html">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --neon-blue: #00D9FF;
+            --neon-purple: #7B2FF7;
+            --neon-pink: #FF006E;
+            --neon-cyan: #00FFF0;
+            --neon-green: #39FF14;
+            --dark-bg: #0F0F1E;
+            --dark-secondary: #1A1A2E;
+            --dark-card: rgba(26, 26, 46, 0.8);
+            --text-primary: #FFFFFF;
+            --text-secondary: #B8BCC8;
+            --gradient-primary: linear-gradient(135deg, #00D9FF 0%, #7B2FF7 100%);
+            --gradient-secondary: linear-gradient(135deg, #7B2FF7 0%, #FF006E 100%);
+            --gradient-accent: linear-gradient(135deg, #00FFF0 0%, #00D9FF 100%);
+            --gradient-dark: linear-gradient(180deg, #0F0F1E 0%, #1A1A2E 50%, #0F0F1E 100%);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background: var(--gradient-dark);
+            min-height: 100vh;
+            color: var(--text-primary);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        /* Neon glow effects */
+        .neon-glow {
+            box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+        }
+
+        .neon-text-glow {
+            text-shadow: 0 0 10px rgba(0, 217, 255, 0.8);
+        }
+
+        .neon-border {
+            border: 1px solid rgba(0, 217, 255, 0.3);
+            box-shadow: 0 0 15px rgba(0, 217, 255, 0.2);
+        }
+
+        .glass-nav {
+            background: rgba(15, 15, 30, 0.9);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+            box-shadow: 0 4px 30px rgba(0, 217, 255, 0.1);
+            neon-border: 1px solid rgba(0, 217, 255, 0.3);
+        }
+
+        .gradient-title {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+        }
+
+        .nav-link {
+            color: var(--text-primary);
+            font-weight: 500;
+            font-size: 17px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 8px 0;
+        }
+
+        .nav-link:hover {
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px rgba(0, 217, 255, 0.8);
+        }
+
+        .card {
+            background: var(--dark-card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 28px;
+            border: 1px solid rgba(0, 217, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            neon-glow: 0 0 20px rgba(0, 217, 255, 0.2);
+        }
+
+        .section-spacing {
+            padding: 80px 0;
+        }
+
+        .feature-card {
+            background: rgba(26, 26, 46, 0.7);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 24px;
+            padding: 2rem;
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            background: rgba(26, 26, 46, 0.9);
+            border-color: var(--neon-blue);
+            box-shadow: 0 16px 48px rgba(0, 217, 255, 0.3);
+            neon-glow: 0 0 30px rgba(0, 217, 255, 0.4);
+        }
+
+        .icon-box {
+            width: 72px;
+            height: 72px;
+            border-radius: 20px;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            box-shadow: 0 4px 20px rgba(0, 217, 255, 0.4);
+            flex-shrink: 0;
+            neon-glow: 0 0 20px rgba(0, 217, 255, 0.6);
+        }
+
+        /* Ensure all text is visible on dark background */
+        p, span, div, li, td, th, blockquote {
+            color: var(--text-primary);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--text-primary);
+        }
+
+        .text-gray-700 {
+            color: var(--text-secondary) !important;
+        }
+
+        .text-gray-900 {
+            color: var(--text-primary) !important;
+        }
+
+        .text-gray-600 {
+            color: var(--text-secondary) !important;
+        }
+
+        .prose {
+            color: var(--text-primary);
+        }
+
+        .prose p {
+            color: var(--text-primary);
+        }
+
+        .prose strong {
+            color: var(--neon-blue);
+            font-weight: 600;
+        }
+
+        .bg-gradient-to-r.from-blue-50.to-indigo-50 {
+            background: linear-gradient(to right, rgba(0, 217, 255, 0.1), rgba(123, 47, 247, 0.1)) !important;
+            border: 1px solid rgba(0, 217, 255, 0.2) !important;
+        }
+
+        .bg-gradient-to-r.from-green-50.to-emerald-50 {
+            background: linear-gradient(to right, rgba(57, 255, 20, 0.1), rgba(0, 255, 240, 0.1)) !important;
+            border: 1px solid rgba(57, 255, 20, 0.2) !important;
+        }
+
+        .bg-gradient-to-r.from-purple-50.to-pink-50 {
+            background: linear-gradient(to right, rgba(123, 47, 247, 0.1), rgba(255, 0, 110, 0.1)) !important;
+            border: 1px solid rgba(123, 47, 247, 0.2) !important;
+        }
+
+        .text-blue-600 {
+            color: var(--neon-blue) !important;
+        }
+
+        .text-green-600 {
+            color: var(--neon-green) !important;
+        }
+
+        .text-purple-600 {
+            color: var(--neon-purple) !important;
+        }
+
+        .bg-gray-50 {
+            background-color: rgba(26, 26, 46, 0.6) !important;
+            border: 1px solid rgba(0, 217, 255, 0.1) !important;
+        }
+
+        @media (max-width: 768px) {
+            .section-spacing {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="glass-nav fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+            <div class="logo text-2xl font-bold gradient-title">Deadshot</div>
+
+            <div class="flex items-center gap-8">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home mr-2"></i>Home
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope mr-2"></i>Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+        <section class="container mx-auto px-4 md:px-8 section-spacing">
+            <div class="card p-8 md:p-12 max-w-6xl mx-auto">
+                <h1 class="gradient-title mb-8">About Deadshot Game</h1>
+
+                <div class="prose max-w-none text-gray-700 space-y-8">
+                    <div class="text-xl leading-relaxed">
+                        <p>
+                            Welcome to <strong>Deadshot Game</strong> - your premier destination for free online multiplayer shooting games!
+                            We are passionate about curating and sharing exciting gaming experiences that bring players together from around the world.
+                        </p>
+                    </div>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">Our Mission</h2>
+                    <p class="text-lg leading-relaxed">
+                        At Deadshot Game, our mission is to provide easy access to high-quality, free-to-play gaming experiences.
+                        We believe that great gaming shouldn't come with barriers or hidden costs. That's why we've created a platform where players
+                        can jump into action-packed multiplayer battles instantly, without downloads or complicated setups.
+                    </p>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">What We Offer</h2>
+
+                    <div class="grid md:grid-cols-3 gap-8 mt-8">
+                        <div class="feature-card text-center">
+                            <div class="icon-box mx-auto mb-5">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-900">Exciting Gameplay</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Fast-paced multiplayer shooting action with intuitive controls and engaging combat mechanics
+                            </p>
+                        </div>
+
+                        <div class="feature-card text-center">
+                            <div class="icon-box mx-auto mb-5">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-900">Global Community</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Connect with players worldwide and compete in real-time battles across different regions
+                            </p>
+                        </div>
+
+                        <div class="feature-card text-center">
+                            <div class="icon-box mx-auto mb-5">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-900">Instant Access</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                No downloads, no installations - just open your browser and start playing immediately
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">Our Values</h2>
+
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                                <i class="fas fa-users mr-3 text-blue-600"></i>
+                                Community First
+                            </h3>
+                            <p class="text-lg leading-relaxed">
+                                We're building more than just a game - we're creating a community where players can connect,
+                                compete, and share their passion for gaming. Your feedback helps us improve and evolve the experience.
+                            </p>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-8 rounded-2xl">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                                <i class="fas fa-unlock-alt mr-3 text-green-600"></i>
+                                Free and Fair Gaming
+                            </h3>
+                            <p class="text-lg leading-relaxed">
+                                Everyone should have access to great gaming. We're committed to keeping our games free
+                                and ensuring fair play for all users, regardless of skill level or experience.
+                            </p>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-2xl">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                                <i class="fas fa-rocket mr-3 text-purple-600"></i>
+                                Continuous Innovation
+                            </h3>
+                            <p class="text-lg leading-relaxed">
+                                We're always working on new features, improvements, and exciting content to keep the gaming
+                                experience fresh and engaging for our players.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">Our Story</h2>
+                    <div class="text-lg leading-relaxed space-y-4">
+                        <p>
+                            Our journey began as passionate gamers who discovered the amazing Deadshot game and wanted to make it
+                            more accessible to players worldwide. We noticed that many great online games were scattered across
+                            different platforms, making it difficult for players to find and enjoy quality gaming experiences.
+                        </p>
+                        <p>
+                            That's why we created this platform - to provide a curated, user-friendly gateway to exceptional browser-based
+                            gaming. While we didn't develop Deadshot ourselves, we're dedicated to providing the best possible
+                            experience for players to discover and enjoy this incredible game. Since launching our platform, we've been
+                            thrilled to see our community of players grow and share in the excitement of multiplayer gaming.
+                        </p>
+                    </div>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">Looking to the Future</h2>
+                    <p class="text-lg leading-relaxed">
+                        We're constantly working on improving our platform based on your feedback and exploring ways to enhance
+                        the gaming experience for our community. While we focus on providing the best possible access to Deadshot,
+                        we're also looking to introduce other quality games that share our commitment to accessible, fun gameplay.
+                        Our roadmap includes enhanced community features, player resources, and tools to help everyone get the most
+                        out of their gaming experience.
+                    </p>
+
+                    <div class="mt-12 p-8 bg-gray-50 rounded-2xl text-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Join Our Community</h3>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Whether you're a casual player or a competitive gamer, there's a place for you in the Deadshot community.
+                            Jump into the game today and experience the excitement for yourself!
+                        </p>
+                        <a href="index.html" class="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 transition-all transform hover:scale-105">
+                            <i class="fas fa-play mr-2"></i>Play Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass-nav border-t border-neon-border py-8">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <p class="text-secondary">&copy; 2025 Deadshot Game. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

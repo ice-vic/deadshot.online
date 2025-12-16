@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Deadshot Game Online for free! Master precision shooting in intense multiplayer battles. Eliminate opponents, climb leaderboards, and dominate the arena in this fast-paced browser game.">
+    <meta name="keywords" content="deadshot, deadshot game, deadshot online, shooting game, multiplayer game, io game, free online game, browser game, precision shooting">
+    <meta name="author" content="Deadshot Game">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://deadshot.buzz/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deadshot.buzz/">
+    <meta property="og:title" content="Deadshot Game Online - Play Free Multiplayer Shooting Game">
+    <meta property="og:description" content="Play Deadshot Game Online for free! Master precision shooting in intense multiplayer battles. Eliminate opponents, climb leaderboards, and dominate the arena in this fast-paced browser game.">
+    <meta property="og:image" content="https://deadshot.buzz/og-image.jpg">
+    <meta property="og:site_name" content="Deadshot Game">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://deadshot.buzz/">
+    <meta property="twitter:title" content="Deadshot Game Online - Play Free Multiplayer Shooting Game">
+    <meta property="twitter:description" content="Play Deadshot Game Online for free! Master precision shooting in intense multiplayer battles.">
+    <meta property="twitter:image" content="https://deadshot.buzz/og-image.jpg">
+
+    <!-- Additional SEO Meta -->
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <link rel="alternate" href="https://deadshot.buzz/" hreflang="en" />
+    
+    <title>Deadshot Game Online - Play Free Multiplayer Shooting Game</title>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Deadshot Game",
+        "url": "https://deadshot.buzz/",
+        "description": "Play Deadshot Game Online for free! Master precision shooting in intense multiplayer battles.",
+        "potentialAction": {
+            "@type": "PlayAction",
+            "target": "https://deadshot.buzz/",
+            "name": "Play Deadshot Game"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Deadshot Game Platform",
+            "url": "https://deadshot.buzz/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Deadshot Game Platform",
+            "url": "https://deadshot.buzz/"
+        },
+        "image": "https://deadshot.buzz/og-image.jpg",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        },
+        "genre": ["Gaming Platform", "Action Game", "Shooting Game", "Multiplayer Game"],
+        "gamePlatform": ["Web Browser", "PC", "Mobile"],
+        "operatingSystem": ["Any", "iOS", "Android", "Windows", "macOS", "Linux"],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "1000"
+        },
+        "mainEntity": {
+            "@type": "VideoGame",
+            "name": "Deadshot",
+            "genre": ["Shooting Game", "Multiplayer Game"],
+            "gamePlatform": ["Web Browser"],
+            "operatingSystem": "Any"
+        }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* 霓虹游戏风配色 */
+            --neon-blue: #00D9FF;
+            --neon-purple: #7B2FF7;
+            --neon-pink: #FF006E;
+            --neon-green: #00FF88;
+            --neon-cyan: #00F5FF;
+            --neon-gold: #FFD700;
+
+            /* 渐变色 */
+            --gradient-primary: linear-gradient(135deg, #00D9FF 0%, #7B2FF7 100%);
+            --gradient-secondary: linear-gradient(135deg, #FF006E 0%, #00F5FF 100%);
+            --gradient-success: linear-gradient(135deg, #00FF88 0%, #00D9FF 100%);
+            --gradient-dark: linear-gradient(180deg, #0F0F1E 0%, #1A1A2E 50%, #0F0F1E 100%);
+
+            /* 深色主题 */
+            --bg-primary: #0F0F1E;
+            --bg-secondary: #1A1A2E;
+            --bg-card: rgba(26, 26, 46, 0.8);
+            --text-primary: #ffffff;
+            --text-secondary: #b8bcc8;
+            --text-muted: #6c7293;
+
+            /* 发光效果 */
+            --glow-blue: 0 0 20px rgba(0, 217, 255, 0.5);
+            --glow-purple: 0 0 20px rgba(123, 47, 247, 0.5);
+            --glow-pink: 0 0 20px rgba(255, 0, 110, 0.5);
+
+            /* 保留原色作为备用 */
+            --apple-blue: #0071e3;
+            --apple-blue-dark: #0051d5;
+            --apple-gray-light: #f5f5f7;
+            --apple-gray: #86868b;
+            --apple-text: #1d1d1f;
+            --apple-white: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background: var(--gradient-dark);
+            min-height: 100vh;
+            color: var(--text-primary);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* 添加背景动画粒子效果 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(0, 217, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(123, 47, 247, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 60%, rgba(255, 0, 110, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+            animation: particleFloat 20s ease-in-out infinite;
+        }
+
+        @keyframes particleFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-20px) rotate(120deg); }
+            66% { transform: translateY(20px) rotate(240deg); }
+        }
+
+        /* Glass Morphism Effect - 霓虹深色版 */
+        .glass {
+            background: rgba(26, 26, 46, 0.85);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border: 1px solid rgba(123, 47, 247, 0.3);
+            box-shadow:
+                0 8px 32px 0 rgba(0, 217, 255, 0.1),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        .glass-nav {
+            background: rgba(15, 15, 30, 0.9);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(123, 47, 247, 0.2);
+            box-shadow:
+                0 4px 24px rgba(0, 217, 255, 0.1),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .glass::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg,
+                rgba(0, 217, 255, 0.05) 0%,
+                transparent 50%,
+                rgba(123, 47, 247, 0.05) 100%);
+            border-radius: inherit;
+            pointer-events: none;
+        }
+
+        /* Gradient Text - 霓虹版本 */
+        .gradient-title {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            text-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+            filter: drop-shadow(0 0 10px rgba(0, 217, 255, 0.3));
+        }
+
+        .gradient-subtitle {
+            background: var(--gradient-secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            text-shadow: 0 0 20px rgba(255, 0, 110, 0.3);
+            filter: drop-shadow(0 0 8px rgba(255, 0, 110, 0.2));
+        }
+
+        /* Typography */
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 900;
+            letter-spacing: -0.04em;
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 3vw, 2.75rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        /* Cards - 霓虹深色版本 */
+        .card {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 28px;
+            border: 1px solid rgba(123, 47, 247, 0.2);
+            box-shadow:
+                0 4px 20px rgba(0, 0, 0, 0.3),
+                0 0 40px rgba(0, 217, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow:
+                0 20px 60px rgba(0, 217, 255, 0.2),
+                0 0 60px rgba(123, 47, 247, 0.1);
+            border-color: rgba(0, 217, 255, 0.4);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-card {
+            background: rgba(26, 26, 46, 0.7);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 24px;
+            padding: 2rem;
+            border: 1px solid rgba(123, 47, 247, 0.15);
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                from 0deg,
+                transparent 0deg,
+                rgba(0, 217, 255, 0.1) 60deg,
+                transparent 120deg,
+                rgba(123, 47, 247, 0.1) 180deg,
+                transparent 240deg,
+                rgba(0, 217, 255, 0.1) 300deg,
+                transparent 360deg
+            );
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            animation: rotate 10s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            background: rgba(26, 26, 46, 0.95);
+            box-shadow:
+                0 16px 48px rgba(0, 217, 255, 0.15),
+                0 0 40px rgba(123, 47, 247, 0.1);
+            border-color: rgba(0, 217, 255, 0.3);
+        }
+
+        .feature-card:hover::after {
+            opacity: 1;
+        }
+
+        /* Buttons - 霓虹版本 */
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 30px;
+            border: none;
+            font-weight: 600;
+            font-size: 17px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            box-shadow:
+                0 4px 14px rgba(0, 217, 255, 0.3),
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                transparent,
+                rgba(255, 255, 255, 0.3),
+                transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-primary::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg,
+                transparent 30%,
+                rgba(255, 255, 255, 0.1) 50%,
+                transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow:
+                0 8px 24px rgba(0, 217, 255, 0.4),
+                0 0 30px rgba(0, 217, 255, 0.3),
+                inset 0 0 20px rgba(255, 255, 255, 0.2);
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary:hover::after {
+            opacity: 1;
+        }
+
+        .btn-primary:active {
+            transform: translateY(0) scale(1.02);
+            box-shadow:
+                0 4px 16px rgba(0, 217, 255, 0.3),
+                inset 0 0 15px rgba(0, 217, 255, 0.2);
+        }
+
+        /* Game Container - 霓虹版本 */
+        .game-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 740px;
+            margin: 0 auto;
+            aspect-ratio: 740 / 480;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow:
+                0 24px 64px rgba(0, 0, 0, 0.4),
+                0 0 80px rgba(0, 217, 255, 0.2),
+                inset 0 0 40px rgba(123, 47, 247, 0.1);
+            background: var(--bg-secondary);
+            border: 1px solid rgba(0, 217, 255, 0.3);
+        }
+
+        .game-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: var(--gradient-primary);
+            border-radius: 30px;
+            opacity: 0.6;
+            z-index: -1;
+            filter: blur(8px);
+            animation: gameGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes gameGlow {
+            0% { opacity: 0.3; filter: blur(8px); }
+            100% { opacity: 0.6; filter: blur(12px); }
+        }
+
+        .game-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+            pointer-events: auto;
+            border-radius: 26px;
+        }
+
+        .fullscreen-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: rgba(15, 15, 30, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 217, 255, 0.4);
+            color: var(--neon-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            z-index: 10;
+            font-size: 20px;
+            box-shadow:
+                0 4px 16px rgba(0, 0, 0, 0.4),
+                0 0 20px rgba(0, 217, 255, 0.2);
+            text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+        }
+
+        .fullscreen-btn:hover {
+            background: rgba(15, 15, 30, 0.95);
+            transform: scale(1.1);
+            box-shadow:
+                0 6px 24px rgba(0, 0, 0, 0.5),
+                0 0 30px rgba(0, 217, 255, 0.4);
+            border-color: var(--neon-blue);
+            text-shadow: 0 0 15px rgba(0, 217, 255, 0.8);
+        }
+
+        /* Icons - 霓虹版本 */
+        .icon-box {
+            width: 72px;
+            height: 72px;
+            border-radius: 20px;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            box-shadow:
+                0 4px 20px rgba(0, 217, 255, 0.4),
+                0 0 40px rgba(0, 217, 255, 0.2);
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .icon-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                from 0deg,
+                transparent 0deg,
+                rgba(255, 255, 255, 0.3) 60deg,
+                transparent 120deg,
+                rgba(255, 255, 255, 0.2) 180deg,
+                transparent 240deg,
+                rgba(255, 255, 255, 0.3) 300deg,
+                transparent 360deg
+            );
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            animation: iconRotate 6s linear infinite;
+        }
+
+        @keyframes iconRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .icon-box:hover {
+            transform: scale(1.05);
+            box-shadow:
+                0 6px 24px rgba(0, 217, 255, 0.5),
+                0 0 60px rgba(0, 217, 255, 0.3);
+        }
+
+        .icon-box:hover::before {
+            opacity: 1;
+        }
+
+        /* Navigation - 霓虹版本 */
+        .nav-link {
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 17px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 8px 0;
+            text-shadow: 0 0 5px rgba(0, 217, 255, 0);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: width 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+        }
+
+        .nav-link:hover {
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px rgba(0, 217, 255, 0.8);
+            transform: translateY(-1px);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            z-index: 40;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .hamburger span {
+            width: 26px;
+            height: 2.5px;
+            background: var(--apple-text);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(9px, 9px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(8px, -8px);
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 20px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: rgba(0, 113, 227, 0.2);
+        }
+
+        .faq-question {
+            padding: 20px 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 18px;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(0, 113, 227, 0.05);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s ease;
+            padding: 0 24px;
+        }
+
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 0 24px 20px;
+        }
+
+        .faq-icon {
+            font-size: 24px;
+            color: var(--apple-blue);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Game Links */
+        .game-link {
+            display: inline-block;
+            padding: 16px 28px;
+            background: linear-gradient(135deg, var(--apple-blue) 0%, var(--apple-blue-dark) 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 22px;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 8px;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            box-shadow: 0 4px 16px rgba(0, 113, 227, 0.25);
+        }
+
+        .game-link:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 113, 227, 0.35);
+        }
+
+        /* Responsive */
+        /* 文本颜色优化 - 深色主题 */
+        .text-gray-700 {
+            color: var(--text-secondary) !important;
+        }
+
+        .text-gray-600 {
+            color: var(--text-secondary) !important;
+        }
+
+        .text-gray-900 {
+            color: var(--text-primary) !important;
+        }
+
+        .text-gray-800 {
+            color: var(--text-primary) !important;
+        }
+
+        .text-gray-500 {
+            color: var(--text-muted) !important;
+        }
+
+        .bg-gray-50 {
+            background: rgba(26, 26, 46, 0.5) !important;
+            border-color: rgba(123, 47, 247, 0.2) !important;
+        }
+
+        .bg-blue-50 {
+            background: rgba(0, 217, 255, 0.1) !important;
+            border-color: rgba(0, 217, 255, 0.2) !important;
+        }
+
+        .bg-indigo-50 {
+            background: rgba(123, 47, 247, 0.1) !important;
+            border-color: rgba(123, 47, 247, 0.2) !important;
+        }
+
+        .bg-purple-50 {
+            background: rgba(123, 47, 247, 0.1) !important;
+            border-color: rgba(123, 47, 247, 0.2) !important;
+        }
+
+        .bg-pink-50 {
+            background: rgba(255, 0, 110, 0.1) !important;
+            border-color: rgba(255, 0, 110, 0.2) !important;
+        }
+
+        .border-blue-100 {
+            border-color: rgba(0, 217, 255, 0.3) !important;
+        }
+
+        .border-blue-600 {
+            background-color: var(--neon-blue) !important;
+        }
+
+        .text-blue-600 {
+            color: var(--neon-blue) !important;
+        }
+
+        /* 额外的文本颜色修复 */
+        p, span, div:not([class*="gradient"]) {
+            color: var(--text-secondary) !important;
+        }
+
+        .text-gray-100 {
+            color: var(--text-secondary) !important;
+        }
+
+        .text-gray-200 {
+            color: var(--text-secondary) !important;
+        }
+
+        .text-gray-300 {
+            color: var(--text-secondary) !important;
+        }
+
+        .text-gray-400 {
+            color: var(--text-secondary) !important;
+        }
+
+        /* FAQ特定修复 */
+        .faq-question {
+            color: var(--text-primary) !important;
+        }
+
+        .faq-answer p {
+            color: var(--text-secondary) !important;
+        }
+
+        /* 移动菜单边框修复 */
+        .border-gray-100 {
+            border-color: rgba(123, 47, 247, 0.2) !important;
+        }
+
+        /* 游戏链接修复 */
+        .game-link {
+            background: var(--gradient-primary) !important;
+            color: white !important;
+            text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+            box-shadow:
+                0 4px 16px rgba(0, 217, 255, 0.3),
+                0 0 30px rgba(0, 217, 255, 0.2);
+        }
+
+        /* 全屏按钮修复 */
+        .hamburger span {
+            background-color: var(--neon-blue) !important;
+        }
+
+        /* 页脚链接修复 */
+        footer a:hover {
+            color: var(--neon-blue) !important;
+            text-shadow: 0 0 5px rgba(0, 217, 255, 0.5);
+        }
+
+        /* 修复Game Overview和Advanced Pro Tips版块的对比度问题 */
+        .bg-gradient-to-br.from-blue-50.to-indigo-50,
+        .bg-gradient-to-r.from-blue-50.to-indigo-50 {
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.18) 0%, rgba(123, 47, 247, 0.15) 100%) !important;
+            border: 1px solid rgba(0, 217, 255, 0.4) !important;
+            box-shadow:
+                0 8px 32px rgba(0, 217, 255, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+        }
+
+        /* 确保这些版块内的文字有足够对比度 */
+        .bg-gradient-to-br.from-blue-50.to-indigo-50 .text-gray-900,
+        .bg-gradient-to-r.from-blue-50.to-indigo-50 .text-gray-900,
+        .bg-gradient-to-br.from-blue-50.to-indigo-50 .text-gray-700,
+        .bg-gradient-to-r.from-blue-50.to-indigo-50 .text-gray-700,
+        .bg-gradient-to-br.from-blue-50.to-indigo-50 .font-semibold,
+        .bg-gradient-to-r.from-blue-50.to-indigo-50 .font-semibold {
+            color: #ffffff !important;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+        }
+
+        /* 特别强调蓝色的文字 */
+        .bg-gradient-to-br.from-blue-50.to-indigo-50 .text-blue-600,
+        .bg-gradient-to-r.from-blue-50.to-indigo-50 .text-blue-600 {
+            color: var(--neon-cyan) !important;
+            text-shadow:
+                0 0 12px rgba(0, 255, 240, 0.8),
+                0 1px 2px rgba(0, 0, 0, 0.5) !important;
+            font-weight: 600 !important;
+        }
+
+        /* 确保版块内的emoji图标更加突出 */
+        .bg-gradient-to-br.from-blue-50.to-indigo-50 .text-3xl,
+        .bg-gradient-to-r.from-blue-50.to-indigo-50 .text-3xl {
+            filter: drop-shadow(0 0 8px rgba(0, 217, 255, 0.6)) !important;
+        }
+
+        /* 版块标题特殊处理 */
+        .bg-gradient-to-br.from-blue-50.to-indigo-50 h3,
+        .bg-gradient-to-r.from-blue-50.to-indigo-50 h3 {
+            color: var(--neon-cyan) !important;
+            text-shadow:
+                0 0 10px rgba(0, 255, 240, 0.7),
+                0 2px 4px rgba(0, 0, 0, 0.6) !important;
+            font-weight: 700 !important;
+        }
+
+        /* 修复Diverse Game Modes版块的对比度问题 */
+        .bg-gradient-to-r.from-purple-50.to-pink-50 {
+            background: linear-gradient(90deg, rgba(123, 47, 247, 0.18) 0%, rgba(255, 0, 110, 0.15) 100%) !important;
+            border: 1px solid rgba(123, 47, 247, 0.4) !important;
+            box-shadow:
+                0 8px 32px rgba(123, 47, 247, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+        }
+
+        /* 确保Diverse Game Modes版块内的文字有足够对比度 */
+        .bg-gradient-to-r.from-purple-50.to-pink-50 .text-gray-900,
+        .bg-gradient-to-r.from-purple-50.to-pink-50 .text-gray-700,
+        .bg-gradient-to-r.from-purple-50.to-pink-50 .font-bold,
+        .bg-gradient-to-r.from-purple-50.to-pink-50 .font-semibold {
+            color: #ffffff !important;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+        }
+
+        /* 确保版块内的emoji图标更加突出 */
+        .bg-gradient-to-r.from-purple-50.to-pink-50 .text-4xl {
+            filter: drop-shadow(0 0 8px rgba(123, 47, 247, 0.6)) !important;
+        }
+
+        /* 版块标题特殊处理 */
+        .bg-gradient-to-r.from-purple-50.to-pink-50 h3 {
+            color: var(--neon-purple) !important;
+            text-shadow:
+                0 0 10px rgba(123, 47, 247, 0.7),
+                0 2px 4px rgba(0, 0, 0, 0.6) !important;
+            font-weight: 700 !important;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-nav {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .fullscreen-btn {
+                width: 46px;
+                height: 46px;
+                top: 16px;
+                right: 16px;
+                font-size: 18px;
+            }
+
+            .game-wrapper {
+                border-radius: 20px;
+            }
+
+            .card {
+                border-radius: 20px;
+            }
+
+            .feature-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.02);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 113, 227, 0.3);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 113, 227, 0.5);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Section Spacing */
+        section {
+            padding: 80px 0;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="glass-nav fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+            <div class="logo text-2xl font-bold gradient-title">Deadshot</div>
+            
+            <div class="desktop-nav flex items-center gap-8">
+                <a href="#play" class="nav-link">Play</a>
+                <a href="#how-to-play" class="nav-link">How to Play</a>
+                <a href="#advantages" class="nav-link">Advantages</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="about-us.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#more-games" class="nav-link">More Games</a>
+            </div>
+
+            <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="flex flex-col py-4">
+                <a href="#play" class="nav-link px-6 py-3 border-b border-gray-100" onclick="toggleMobileMenu()">Play</a>
+                <a href="#how-to-play" class="nav-link px-6 py-3 border-b border-gray-100" onclick="toggleMobileMenu()">How to Play</a>
+                <a href="#advantages" class="nav-link px-6 py-3 border-b border-gray-100" onclick="toggleMobileMenu()">Advantages</a>
+                <a href="#features" class="nav-link px-6 py-3 border-b border-gray-100" onclick="toggleMobileMenu()">Features</a>
+                <a href="about-us.html" class="nav-link px-6 py-3 border-b border-gray-100" onclick="toggleMobileMenu()">About Us</a>
+                <a href="contact.html" class="nav-link px-6 py-3 border-b border-gray-100" onclick="toggleMobileMenu()">Contact</a>
+                <a href="#faq" class="nav-link px-6 py-3 border-b border-gray-100" onclick="toggleMobileMenu()">FAQ</a>
+                <a href="#more-games" class="nav-link px-6 py-3" onclick="toggleMobileMenu()">More Games</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section id="play" class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <h1 class="gradient-title mb-6">Deadshot Game Online</h1>
+                <p class="text-xl md:text-2xl text-gray-600 font-medium max-w-3xl mx-auto leading-relaxed">
+                    Master precision shooting in intense multiplayer battles. Eliminate opponents, 
+                    climb the leaderboards, and prove your skills in fast-paced combat!
+                </p>
+            </div>
+
+            <div class="game-wrapper fade-in-up">
+                <button class="fullscreen-btn" id="fullscreenBtn" onclick="toggleFullscreen()" aria-label="Toggle fullscreen">
+                    <i class="fas fa-expand" id="fullscreenIcon"></i>
+                </button>
+                <iframe 
+                    src="https://games.crazygames.com/en_US/deadshot-io/index.html"
+                    width="740"
+                    height="480"
+                    frameborder="0"
+                    allowfullscreen="true"
+                    title="CrazyGames - deadshot io"
+                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-presentation allow-gamepad allow-pointer-lock allow-top-navigation-by-user-activation allow-modals"
+                    allow="gamepad; fullscreen; autoplay; microphone; camera">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- How to Play -->
+        <section id="how-to-play" class="container mx-auto px-4 md:px-8">
+            <div class="card p-8 md:p-12 max-w-6xl mx-auto">
+                <h2 class="gradient-subtitle mb-10">How to Play Deadshot Game</h2>
+
+                <div class="space-y-8">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Deadshot.io is a fast-paced multiplayer first-person shooting (FPS) game where precision meets strategy in intense real-time combat.
+                        Your objective is to eliminate opponents, survive as long as possible, and achieve the highest score on the leaderboard.
+                        Experience instant action with quick respawns and continuous battles that keep the adrenaline pumping!
+                    </p>
+
+                    <!-- Game Introduction -->
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-24 border border-blue-100">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Game Overview</h3>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600 mb-2">⚡ Fast-Paced</div>
+                                <p class="text-gray-700">Quick respawns and continuous action with no downtime</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600 mb-2">🎯 Skill-Based</div>
+                                <p class="text-gray-700">Pure shooting mechanics focused on aim and reflexes</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600 mb-2">🌐 Accessible</div>
+                                <p class="text-gray-700">No downloads required - play instantly in your browser</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Controls -->
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Controls & Keybindings</h3>
+                        <div class="bg-gray-50 p-6 rounded-2xl">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="flex items-center gap-4">
+                                    <span class="bg-blue-600 text-white px-3 py-1 rounded-lg font-mono font-bold">W/A/S/D</span>
+                                    <span class="text-gray-700">Move your character (forward/backward/strafe)</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="bg-blue-600 text-white px-3 py-1 rounded-lg font-mono font-bold">Mouse</span>
+                                    <span class="text-gray-700">Aim and control camera view</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="bg-blue-600 text-white px-3 py-1 rounded-lg font-mono font-bold">Left Click</span>
+                                    <span class="text-gray-700">Shoot your weapon</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="bg-blue-600 text-white px-3 py-1 rounded-lg font-mono font-bold">Right Click</span>
+                                    <span class="text-gray-700">Aim down sights (ADS) for precision</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="bg-blue-600 text-white px-3 py-1 rounded-lg font-mono font-bold">Space</span>
+                                    <span class="text-gray-700">Jump over obstacles and dodge</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="bg-blue-600 text-white px-3 py-1 rounded-lg font-mono font-bold">C/Ctrl</span>
+                                    <span class="text-gray-700">Crouch or slide while moving</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="bg-blue-600 text-white px-3 py-1 rounded-lg font-mono font-bold">R</span>
+                                    <span class="text-gray-700">Reload your weapon</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="bg-blue-600 text-white px-3 py-1 rounded-lg font-mono font-bold">1-3</span>
+                                    <span class="text-gray-700">Switch between weapons</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="bg-blue-600 text-white px-3 py-1 rounded-lg font-mono font-bold">E/F</span>
+                                    <span class="text-gray-700">Interact with objects</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Core Gameplay Elements -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="feature-card">
+                            <div class="flex items-start gap-5">
+                                <div class="icon-box">
+                                    <i class="fas fa-crosshairs"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-3 text-gray-900">Aiming & Shooting</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        Master the art of precision shooting. Use right-click to aim down sights for increased accuracy,
+                                        and practice pre-aiming common angles and corners. Each weapon has different recoil patterns and handling characteristics.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="flex items-start gap-5">
+                                <div class="icon-box">
+                                    <i class="fas fa-running"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-3 text-gray-900">Movement & Positioning</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        Master movement techniques like slide-jumping for quick escapes, A/D strafing to dodge enemy fire,
+                                        and using jumps to gain vertical advantages. Always keep moving to make yourself a harder target!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="flex items-start gap-5">
+                                <div class="icon-box">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-3 text-gray-900">Map Awareness</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        Control key areas of the map, use high ground advantages, and learn popular engagement spots.
+                                        Always keep checking corners and avoid exposing yourself to multiple angles simultaneously.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="flex items-start gap-5">
+                                <div class="icon-box">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-3 text-gray-900">Scoring & Ranking</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        Earn points for eliminations and survival time. Consistent performance helps you climb
+                                        the global leaderboard. Focus on improving your K/D ratio while maintaining aggressive play.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 p-8 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-24 border border-blue-100">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-900 flex items-center gap-3">
+                            <span class="text-3xl">🚀</span>
+                            <span>Advanced Pro Tips & Strategies</span>
+                        </h3>
+
+                        <!-- Movement Techniques -->
+                        <div class="mb-6">
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Movement Mastery</h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold text-xl">•</span>
+                                    <div>
+                                        <span class="font-semibold text-gray-800">A/D Strafing:</span>
+                                        <span class="text-gray-700"> Quickly alternate left-right movement to dodge enemy fire while maintaining accuracy</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold text-xl">•</span>
+                                    <div>
+                                        <span class="font-semibold text-gray-800">Slide-Jump Combo:</span>
+                                        <span class="text-gray-700"> Combine crouching with jumping for rapid repositioning and escapes</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold text-xl">•</span>
+                                    <div>
+                                        <span class="font-semibold text-gray-800">Jump Shots:</span>
+                                        <span class="text-gray-700"> Use jumping to disrupt enemy aim, especially in close-quarters combat</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold text-xl">•</span>
+                                    <div>
+                                        <span class="font-semibold text-gray-800">Corner Peeking:</span>
+                                        <span class="text-gray-700"> Quickly check corners then retreat to gain information safely</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Aiming Techniques -->
+                        <div class="mb-6">
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Precision Aiming</h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold text-xl">•</span>
+                                    <div>
+                                        <span class="font-semibold text-gray-800">Pre-Aiming:</span>
+                                        <span class="text-gray-700"> Keep crosshair at head level and aimed at common angles/entry points</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold text-xl">•</span>
+                                    <div>
+                                        <span class="font-semibold text-gray-800">Quick Scoping:</span>
+                                        <span class="text-gray-700"> For snipers, master the art of scoping and shooting in one fluid motion</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold text-xl">•</span>
+                                    <div>
+                                        <span class="font-semibold text-gray-800">Flick Shots:</span>
+                                        <span class="text-gray-700"> Practice quick mouse movements to snap onto targets at different positions</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold text-xl">•</span>
+                                    <div>
+                                        <span class="font-semibold text-gray-800">Track & Drag:</span>
+                                        <span class="text-gray-700"> For moving targets, lead your shots and adjust for enemy movement patterns</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tactical Awareness -->
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Game Sense & Strategy</h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold text-xl">•</span>
+                                    <div>
+                                        <span class="font-semibold text-gray-800">High Ground Control:</span>
+                                        <span class="text-gray-700"> Always prioritize elevated positions for better visibility and cover</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold text-xl">•</span>
+                                    <div>
+                                        <span class="font-semibold text-gray-800">Weapon Switching:</span>
+                                        <span class="text-gray-700"> Switch to secondary instead of reloading during heated fights</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold text-xl">•</span>
+                                    <div>
+                                        <span class="font-semibold text-gray-800">Angle Management:</span>
+                                        <span class="text-gray-700"> Play with your back to walls to avoid being caught in crossfire</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-blue-600 font-bold text-xl">•</span>
+                                    <div>
+                                        <span class="font-semibold text-gray-800">Sensitivity Optimization:</span>
+                                        <span class="text-gray-700"> Find your ideal DPI for consistent tracking without overshooting</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages -->
+        <section id="advantages" class="container mx-auto px-4 md:px-8">
+            <div class="card p-8 md:p-12 max-w-6xl mx-auto">
+                <h2 class="gradient-subtitle mb-10 text-center">Advantages of Deadshot Game</h2>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="feature-card text-center">
+                        <div class="icon-box mx-auto mb-5">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Play Anywhere</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            No downloads required! Play Deadshot directly in your browser on any device - desktop, tablet, or mobile.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card text-center">
+                        <div class="icon-box mx-auto mb-5">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Multiplayer Action</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Compete against players from around the world in real-time multiplayer battles. Every match is unique and exciting.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card text-center">
+                        <div class="icon-box mx-auto mb-5">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Skill Development</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Improve your aim, reflexes, and strategic thinking with each match. Track your progress and see yourself improve.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card text-center">
+                        <div class="icon-box mx-auto mb-5">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Fast-Paced Action</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Quick matchmaking and instant gameplay. Jump into action within seconds and enjoy non-stop excitement.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card text-center">
+                        <div class="icon-box mx-auto mb-5">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Completely Free</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            100% free to play with no hidden costs or pay-to-win mechanics. Pure skill-based competition for everyone.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card text-center">
+                        <div class="icon-box mx-auto mb-5">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Cross-Platform</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Seamless experience across all devices. Play on your PC, switch to mobile, and continue your gaming session.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Features -->
+        <section id="features" class="container mx-auto px-4 md:px-8">
+            <div class="card p-8 md:p-12 max-w-6xl mx-auto">
+                <h2 class="gradient-subtitle mb-10">Deadshot Game Core Features</h2>
+
+                <div class="space-y-6">
+                    <!-- Game Mechanics -->
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl mb-8">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">🎮 Core Gameplay Mechanics</h3>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="text-center">
+                                <div class="text-4xl mb-3">⚡</div>
+                                <h4 class="font-bold text-gray-900 mb-2">Quick Respawn System</h4>
+                                <p class="text-gray-700">Instant action with minimal downtime - jump right back into the fight</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-4xl mb-3">🎯</div>
+                                <h4 class="font-bold text-gray-900 mb-2">Pure Skill-Based Combat</h4>
+                                <p class="text-gray-700">No abilities or ultimates - focus is purely on aim, movement, and strategy</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-4xl mb-3">🏃</div>
+                                <h4 class="font-bold text-gray-900 mb-2">Advanced Movement</h4>
+                                <p class="text-gray-700">Sliding, jumping, and strafing mechanics for dynamic gameplay</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="flex items-start gap-6">
+                            <div class="icon-box">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-gray-900">Intuitive Control System</h3>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    Master responsive FPS controls optimized for both keyboard/mouse and touch interfaces.
+                                    Classic WASD movement with modern improvements like slide-jumping and quick weapon switching.
+                                    The low learning curve makes it accessible while maintaining depth for competitive play.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="flex items-start gap-6">
+                            <div class="icon-box">
+                                <i class="fas fa-map"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-gray-900">Strategic Battle Arenas</h3>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    Experience diverse map layouts designed for balanced competitive gameplay. Each arena features
+                                    unique tactical elements including high ground advantages, choke points, flank routes, and strategic cover positions.
+                                    Maps are optimized for different engagement distances and playstyles.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="flex items-start gap-6">
+                            <div class="icon-box">
+                                <i class="fas fa-crosshairs"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-gray-900">Precision Shooting Mechanics</h3>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    Experience responsive shooting with accurate hit detection and realistic ballistics.
+                                    Each weapon features unique handling characteristics, recoil patterns, and optimal engagement ranges.
+                                    Master the ADS (Aim Down Sights) system for long-range precision or hip-fire for close-quarters combat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="flex items-start gap-6">
+                            <div class="icon-box">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-gray-900">Seamless Multiplayer Integration</h3>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    Connect with players worldwide through optimized server infrastructure ensuring minimal latency.
+                                    Quick matchmaking system balances teams based on skill levels for fair competitive matches.
+                                    Support for private rooms, friend invites, and team coordination features.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game Modes Section -->
+                    <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-2xl my-8">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">🏆 Diverse Game Modes</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-900 mb-2">Free-for-All (FFA)</h4>
+                                <p class="text-gray-700">Every player competes individually. Test your solo skills against everyone in the arena.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-900 mb-2">Team Deathmatch</h4>
+                                <p class="text-gray-700">Cooperative team-based combat. Coordinate with teammates to achieve victory.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="flex items-start gap-6">
+                            <div class="icon-box">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-gray-900">Comprehensive Progression System</h3>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    Track your improvement with detailed statistics including K/D ratio, accuracy percentages,
+                                    win rates, and performance trends. Global leaderboards showcase top players worldwide
+                                    while regional rankings help you compete against local talent.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="flex items-start gap-6">
+                            <div class="icon-box">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-gray-900">Cross-Platform Compatibility</h3>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    Enjoy Deadshot seamlessly across all devices. Play on desktop with mouse and keyboard,
+                                    switch to mobile with optimized touch controls, or use tablet for a portable gaming experience.
+                                    Your progress syncs across platforms for uninterrupted gameplay.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="flex items-start gap-6">
+                            <div class="icon-box">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-gray-900">Performance Optimization</h3>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    Low-poly graphics style ensures smooth performance even on older hardware and mobile devices.
+                                    Adjustable quality settings let you balance visual fidelity with frame rate based on your device capabilities.
+                                    Optimized netcode provides responsive gameplay even with higher ping connections.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section id="how-it-works" class="container mx-auto px-4 md:px-8">
+            <div class="card p-8 md:p-12 max-w-6xl mx-auto">
+                <h2 class="gradient-subtitle mb-10">How Deadshot Game Works</h2>
+                
+                <div class="space-y-10">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Deadshot operates on a real-time multiplayer architecture where players from around the world connect 
+                        to battle arenas and compete in fast-paced shooting matches. The game uses advanced matchmaking to 
+                        ensure balanced and exciting gameplay experiences.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <div class="feature-card text-center">
+                            <div class="w-24 h-24 mx-auto mb-5 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-4xl font-bold shadow-lg">1</div>
+                            <h3 class="font-bold text-lg mb-3 text-gray-900">Matchmaking</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Players are quickly matched into a battle arena with opponents of similar skill levels for balanced competition.
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card text-center">
+                            <div class="w-24 h-24 mx-auto mb-5 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold shadow-lg">2</div>
+                            <h3 class="font-bold text-lg mb-3 text-gray-900">Combat Phase</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Players engage in real-time combat, using movement, positioning, and precise aiming to eliminate opponents.
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card text-center">
+                            <div class="w-24 h-24 mx-auto mb-5 rounded-full bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white text-4xl font-bold shadow-lg">3</div>
+                            <h3 class="font-bold text-lg mb-3 text-gray-900">Scoring System</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Points are awarded for eliminations and survival time. The longer you survive, the more points you accumulate.
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card text-center">
+                            <div class="w-24 h-24 mx-auto mb-5 rounded-full bg-gradient-to-br from-pink-500 to-red-600 flex items-center justify-center text-white text-4xl font-bold shadow-lg">4</div>
+                            <h3 class="font-bold text-lg mb-3 text-gray-900">Leaderboard Update</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Your performance is tracked and displayed on global leaderboards, allowing you to compete for the top positions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 p-8 bg-gradient-to-br from-indigo-50 to-blue-50 rounded-24 border border-indigo-100">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900 flex items-center gap-3">
+                            <span class="text-3xl">🎮</span>
+                            <span>Game Mechanics</span>
+                        </h3>
+                        <p class="text-gray-700 mb-4 leading-relaxed text-lg">
+                            Deadshot uses a skill-based combat system where player performance directly impacts scoring. 
+                            The game features responsive controls, accurate hit detection, and fair matchmaking to ensure 
+                            an enjoyable experience for players of all skill levels. Each match is dynamic, with players 
+                            constantly adapting their strategies based on the battlefield and opponent behavior.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            The ranking system rewards consistent performance and improvement, encouraging players to 
+                            refine their skills and climb the leaderboards through dedication and practice.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="container mx-auto px-4 md:px-8">
+            <div class="card p-8 md:p-12 max-w-6xl mx-auto">
+                <h2 class="gradient-subtitle mb-10 text-center">Frequently Asked Questions</h2>
+
+                <div class="space-y-4">
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>Is Deadshot free to play?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="text-gray-700 leading-relaxed">
+                                Yes! Deadshot is completely free to play. There are no subscriptions, hidden fees, or pay-to-win mechanics.
+                                Simply load the game in your browser and start playing immediately. The game is accessible to everyone without any cost barriers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>Do I need to create an account to play?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="text-gray-700 leading-relaxed">
+                                No account is required to start playing! You can jump into the action immediately as a guest. However, creating an account allows
+                                you to track your progress, save your statistics, unlock achievements, and compete on the leaderboards with a persistent profile.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>Can I play Deadshot on mobile devices?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="text-gray-700 leading-relaxed">
+                                Absolutely! Deadshot is fully optimized for mobile devices including smartphones and tablets.
+                                The responsive design ensures smooth gameplay and intuitive touch controls across all screen sizes.
+                                You can also download the mobile app from Google Play for an enhanced mobile experience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>Why is my game lagging or experiencing high ping?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="text-gray-700 leading-relaxed">
+                                Lag can be caused by several factors: Check your internet connection stability, close bandwidth-heavy background programs,
+                                try connecting to servers with lower latency, and ensure your browser is updated to the latest version.
+                                Using a wired connection instead of WiFi can also help reduce ping.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>How can I improve my aim and shooting skills?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="text-gray-700 leading-relaxed">
+                                Practice regularly with the fundamental controls: Use right-click for ADS (Aim Down Sights) to improve accuracy,
+                                keep your crosshair at head level, practice pre-aiming common angles, and find the perfect sensitivity setting
+                                that allows you to track targets without overshooting. Consider practicing in less populated servers first.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>What are the best movement techniques to avoid enemy fire?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="text-gray-700 leading-relaxed">
+                                Master key movement techniques: Use A/D strafing to dodge enemy fire, combine sliding with jumping for quick escapes,
+                                use jump shots in close-quarters combat to disrupt enemy aim, and always keep moving to make yourself harder to hit.
+                                Don't forget to use cover and obstacles strategically.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>How do I get new weapons or skins?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="text-gray-700 leading-relaxed">
+                                You can unlock new weapons and cosmetic items by earning experience points and in-game currency through gameplay.
+                                Complete matches, achieve eliminations, and survive longer to accumulate points. Some exclusive items may also be
+                                available through special events or the in-game store.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>Can I play with my friends?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="text-gray-700 leading-relaxed">
+                                Yes! Look for private room options or "join friends" features in the game lobby.
+                                You can usually invite friends by sharing a room code or through direct invitation systems.
+                                Team modes allow you to cooperate with friends against other players.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>How do I report cheaters or toxic players?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="text-gray-700 leading-relaxed">
+                                Use the in-game reporting system to report cheating players or inappropriate behavior.
+                                You can also record evidence and report through official Discord channels or support emails.
+                                Include player usernames, time of incident, and any available evidence for faster action.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>What should I do if I can't connect to game servers?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="text-gray-700 leading-relaxed">
+                                First check official channels to see if servers are undergoing maintenance.
+                                If servers are online, try refreshing your browser, clearing cache and cookies,
+                                temporarily disabling VPN or firewall, and ensuring your internet connection is stable.
+                                Contact support if issues persist.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>What game modes are available in Deadshot?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="text-gray-700 leading-relaxed">
+                                Deadshot offers various game modes including Free-for-All (FFA) where everyone competes individually,
+                                Team Deathmatch where teams battle for the most kills, and occasional special event modes.
+                                Each mode emphasizes different skills and provides unique gameplay experiences.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>How does the ranking system work?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="text-gray-700 leading-relaxed">
+                                The ranking system evaluates your performance based on K/D ratio, win rate, and consistency.
+                                You earn points for eliminations, survival time, and match victories. The more consistently you perform well,
+                                the higher you'll climb on the global and regional leaderboards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- More Games -->
+        <section id="more-games" class="container mx-auto px-4 md:px-8 pb-20">
+            <div class="card p-8 md:p-12 max-w-6xl mx-auto">
+                <h2 class="gradient-subtitle mb-8 text-center">Explore More Games</h2>
+                <p class="text-gray-700 mb-10 text-lg text-center max-w-2xl mx-auto leading-relaxed">
+                    Love Deadshot? Check out these other exciting online games that offer thrilling gameplay experiences:
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://portalescape.click" class="game-link" target="_blank" rel="noopener noreferrer">Portal Escape</a>
+                    <a href="https://boom.christmas" class="game-link" target="_blank" rel="noopener noreferrer">Boom Christmas</a>
+                    <a href="https://frontwars.shop" class="game-link" target="_blank" rel="noopener noreferrer">Front Wars</a>
+                    <a href="https://bloxd.asia" class="game-link" target="_blank" rel="noopener noreferrer">Bloxd</a>
+                    <a href="https://takeactions.click" class="game-link" target="_blank" rel="noopener noreferrer">Take Actions</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass border-t border-gray-200 py-12 mt-20">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Logo and Description -->
+                <div class="md:col-span-1">
+                    <div class="text-3xl font-bold gradient-title mb-4">Deadshot</div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Your premier destination for free online multiplayer shooting games.
+                        Play instantly in your browser with players worldwide.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li><a href="#play" class="hover:text-blue-600 transition">Play Game</a></li>
+                        <li><a href="#how-to-play" class="hover:text-blue-600 transition">How to Play</a></li>
+                        <li><a href="#features" class="hover:text-blue-600 transition">Features</a></li>
+                        <li><a href="#faq" class="hover:text-blue-600 transition">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li><a href="about-us.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-blue-600 transition">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html" class="hover:text-blue-600 transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h3 class="font-bold text-gray-900 mb-4">Game Info</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>Age Rating: 13+</li>
+                        <li>Platform: Web Browser</li>
+                        <li>Genre: Multiplayer Shooter</li>
+                        <li><a href="#more-games" class="hover:text-blue-600 transition">More Games</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-200 pt-8 text-center">
+                <p class="text-gray-600 mb-2">&copy; 2025 Deadshot Game. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">Play responsibly and enjoy your gaming adventure!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Fullscreen functionality
+        function toggleFullscreen() {
+            const wrapper = document.querySelector('.game-wrapper');
+            const icon = document.getElementById('fullscreenIcon');
+            
+            if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+                if (wrapper.requestFullscreen) {
+                    wrapper.requestFullscreen();
+                } else if (wrapper.webkitRequestFullscreen) {
+                    wrapper.webkitRequestFullscreen();
+                } else if (wrapper.msRequestFullscreen) {
+                    wrapper.msRequestFullscreen();
+                }
+                icon.classList.remove('fa-expand');
+                icon.classList.add('fa-compress');
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+                icon.classList.remove('fa-compress');
+                icon.classList.add('fa-expand');
+            }
+        }
+
+        // Update fullscreen button icon
+        document.addEventListener('fullscreenchange', updateFullscreenIcon);
+        document.addEventListener('webkitfullscreenchange', updateFullscreenIcon);
+        document.addEventListener('msfullscreenchange', updateFullscreenIcon);
+
+        function updateFullscreenIcon() {
+            const icon = document.getElementById('fullscreenIcon');
+            if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+                icon.classList.remove('fa-expand');
+                icon.classList.add('fa-compress');
+            } else {
+                icon.classList.remove('fa-compress');
+                icon.classList.add('fa-expand');
+            }
+        }
+
+        // FAQ toggle
+        function toggleFaq(element) {
+            const answer = element.querySelector('.faq-answer');
+            const item = element.closest('.faq-item');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-item').forEach(faq => {
+                if (faq !== item) {
+                    faq.classList.remove('active');
+                    faq.querySelector('.faq-answer').classList.remove('active');
+                }
+            });
+            
+            // Toggle current FAQ
+            item.classList.toggle('active');
+            answer.classList.toggle('active');
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const hamburger = document.getElementById('hamburger');
+            
+            menu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('mobileMenu');
+            const hamburger = document.getElementById('hamburger');
+            const nav = document.querySelector('nav');
+            
+            if (menu.classList.contains('active') && 
+                !menu.contains(event.target) && 
+                !hamburger.contains(event.target) &&
+                !nav.contains(event.target)) {
+                menu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 50) {
+                nav.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.08)';
+            } else {
+                nav.style.boxShadow = '0 1px 0 0 rgba(255, 255, 255, 0.5) inset';
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>
